@@ -133,26 +133,6 @@ Key insight: auto batch (`-1`) + augmentation delivered best stability and gener
 <img src="img/yolo-cf.png" alt="YOLO Confusion Matrix" width="700" />
 </details>
 
-### 4.2 Faster R-CNN Experiments
-Backbones: `R_50_FPN_3x`, `R_101_FPN_3x`. Attempts to mitigate overfitting: low LR (0.001), solver steps (e.g. 500/700/800), gamma decay (0.5), fixed batch size 8.
-
-Challenges: Overfitting persisted; dataset scale insufficient for heavier architecture depth.
-
-<details>
-<summary>Metrics (representative runs)</summary>
-<img src="img/faster-rcnn-map50.png" alt="Faster R-CNN mAP50" width="700" />
-<img src="img/faster-rcnn-total-loss.png" alt="Faster R-CNN Total Loss" width="700" />
-<img src="img/faster-rcnn-cf.png" alt="Faster R-CNN Confusion Matrix" width="700" />
-</details>
-
-### 4.3 Comparative Summary
-<img src="img/yolo-vs-faster-map50.png" alt="mAP50 Comparison" width="700" />
-<img src="img/yolo-vs-faster-total-loss.png" alt="Total Loss Comparison" width="700" />
-
-Conclusion: YOLOv8 superior on small, heterogeneous dataset due to efficient feature reuse, dynamic label assignment, and lighter inductive bias vs two‑stage region proposal pipeline.
-
----
-
 ## 5. Application (Desktop GUI) Deep Dive
 
 ### 5.1 Runtime Flow
