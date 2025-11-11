@@ -50,6 +50,9 @@ wandb/
 weights/
 checkpoints/
 
+# Exception: Allow the production model in the app
+!damage_detection_app/model/best.pt
+
 # Dataset files (too large for git)
 *.zip
 *.tar.gz
