@@ -8,8 +8,6 @@
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-00FFFF.svg)](https://github.com/ultralytics/ultralytics)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-<img src="img/app_screen.png" alt="GUI Screenshot" width="640" />
-
 [Features](#1-high-level-overview) • [Installation](#6-installation--quick-start) • [Training](#4-model-training--evaluation) • [Usage](#5-application-desktop-gui-deep-dive) • [Contributing](CONTRIBUTING.md)
 
 </div>
@@ -94,10 +92,10 @@ Dataset source & details: [Roboflow Project Link](https://universe.roboflow.com/
 - Saturation adjustment: −35% to +35%
 - Cutout: 10 masks (~2% each) to encourage robustness to occlusion
 
-<img src="img/augumentation_example.png" alt="Augmentation Example" width="800" />
+
 
 ### 3.2 Class Distribution & Visual Reference
-<img src="img/dataset_categories.png" alt="Dataset Categories" width="800" />
+
 
 ---
 
@@ -127,10 +125,6 @@ Key insight: auto batch (`-1`) + augmentation delivered best stability and gener
 | mAP50 | Competitive given limited data size |
 | Confusion Matrix | Low cross‑class leakage on high contrast damage types |
 
-<img src="img/yolo-precision.png" alt="YOLO Precision" width="700" />
-<img src="img/yolo-total-loss.png" alt="YOLO Total Loss" width="700" />
-<img src="img/yolo-map50.png" alt="YOLO mAP50" width="700" />
-<img src="img/yolo-cf.png" alt="YOLO Confusion Matrix" width="700" />
 </details>
 
 ## 5. Application (Desktop GUI) Deep Dive
