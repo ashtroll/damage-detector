@@ -260,7 +260,7 @@ Dataset annotations produced manually; ensure any redistribution complies with o
 ## 13. Visual Demo
 <img src="img/application_demo.gif" alt="Application Demo" width="700" />
 
----
+----
 
 ## 14. Summary
 This project demonstrates a complete, minimal yet extensible pipeline for car exterior damage detection—from curated polygon annotations through model benchmarking to a user‑friendly desktop visualization tool. YOLOv8 currently offers the best trade‑off on the constrained dataset; the architecture choices, augmentation strategy, and GUI design aim to be transparent so you can iterate further.
